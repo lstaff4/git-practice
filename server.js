@@ -8,6 +8,10 @@ app.get('/', (req, res) => {
   res.render('helloworld.ejs');
 })
 
+app.get('/about', (req, res) => {
+  res.render('about.ejs');
+})
+
 app.get('/hello/:name', (req, res) => {
   const name = req.params.name;
   res.status(200).end(`<!DOCTYPE html>
